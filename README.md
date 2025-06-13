@@ -26,3 +26,9 @@ Currently, the JS file uses mock data — backend parsing is required to fully i
 - HTML5, CSS3
 - JavaScript (Vanilla)
 - XML for data input
+
+## Future Improvements
+
+- XML parsing in JavaScript or integration with backend (e.g., Python Flask/Django)
+- Charts and statistics for total spending, most frequent recipients, etc.
+- Search and filter functionality in the UI
