@@ -1,0 +1,208 @@
+/* General Reset and Fonts */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #2f3640;
+  }
+  
+  header {
+    background-color: #ffcd03;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  
+  .search-filter {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .search-filter input,
+  .search-filter select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  /* Chart Area */
+  .charts {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .chart-box {
+    width: 400px;
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  
+ /* Base table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 2rem;
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Table head (light) */
+  thead {
+    background-color: #f1f3f5;
+    color: #111;
+    text-align: left;
+    font-weight: 600;
+  }
+  
+  thead th {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  /* Table body rows */
+  tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  tbody td {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Rounded corners for table head */
+  thead th:first-child {
+    border-top-left-radius: 10px;
+  }
+  
+  thead th:last-child {
+    border-top-right-radius: 10px;
+  }
+  
+  /* Row hover effect */
+  tbody tr:hover {
+    background-color: #f9f9f9;
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Dark mode overrides */
+  body.dark table {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+  }
+  
+  body.dark thead {
+    background-color: #292929;
+    color: #fff;
+  }
+  
+  body.dark tbody tr {
+    border-bottom: 1px solid #444;
+  }
+  
+  body.dark tbody tr:hover {
+    background-color: #2d2d2d;
+  }
+  
+  body.dark thead th:first-child {
+    border-top-left-radius: 10px;
+  }
+  
+  body.dark thead th:last-child {
+    border-top-right-radius: 10px;
+  }
+  
+  
+  /* Modal Styling */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo {
+    height: 60px; 
+    width: auto;
+    border-radius: 8px;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background: #ffcc00;
+    color: #000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .header-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .search-filter {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .selectors {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
