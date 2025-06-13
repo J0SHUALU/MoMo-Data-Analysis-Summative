@@ -11,9 +11,9 @@ app.use(express.static(path.join(__dirname, '../client')));
 // DB Connection
 const db = mysql.createPool({
   host: 'localhost',
-  user: 'your_user',
-  password: 'your_password',
-  database: 'your_database'
+  user: 'root',
+  password: '',
+  database: 'momodata'
 });
 
 // 1. Get all transactions
@@ -41,10 +41,8 @@ app.post('/api/transactions', (req, res) => {
   if (!date || !amount || !type || !category) {
     return res.status(400).json({ error: 'Missing required fields' });
   }
-  const query = `
-    INSERT INTO transactions (date, amount, type, category, description)
-    VALUES (?, ?, ?, ?, ?)
-  `;
+  const query = `INSERT INTO transactions (date, amount, type, category, description)
+    VALUES (?, ?, ?, ?, ?)`;
   db.query(query, [date, amount, type, category, description], (err, result) => {
     if (err) return res.status(500).json({ error: err.message });
     res.status(201).json({ message: 'Transaction added', id: result.insertId });
