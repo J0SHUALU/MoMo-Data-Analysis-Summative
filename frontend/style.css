@@ -206,3 +206,29 @@ table {
     gap: 0.5rem;
     align-items: center;
   }
+
+  #theme-toggle {
+    padding: 0.5rem;
+    background: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  body.dark {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+  }
+  
+  body.dark table,
+  body.dark .chart-box,
+  body.dark .modal-content {
+    background-color: #2e2e2e;
+    color: #fff;
+  }
+  
+  body.dark #theme-toggle {
+    background-color: #444;
+    color: #fff;
+  }
+  
