@@ -32,3 +32,7 @@ Currently, the JS file uses mock data — backend parsing is required to fully i
 - XML parsing in JavaScript or integration with backend (e.g., Python Flask/Django)
 - Charts and statistics for total spending, most frequent recipients, etc.
 - Search and filter functionality in the UI
+
+## License
+
+MIT License
