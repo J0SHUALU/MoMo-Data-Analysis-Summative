@@ -12,3 +12,17 @@ Users export their SMS messages in XML format (commonly via SMS backup apps). Th
 - Classifies transaction types (e.g., payments, bundles, withdrawals)
 - Renders interactive transaction tables in HTML
 - Basic transaction visualization and user-friendly interface
+
+## How to Use
+
+1. Place your SMS XML backup in the `Data/` folder.
+2. Open `frontend/index.html` in a browser.
+3. The dashboard will parse the data and display a summary table (if integrated with backend parsing).
+
+Currently, the JS file uses mock data — backend parsing is required to fully integrate the XML data.
+
+## Technologies Used
+
+- HTML5, CSS3
+- JavaScript (Vanilla)
+- XML for data input
