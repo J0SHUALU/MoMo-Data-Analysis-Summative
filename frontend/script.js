@@ -85,4 +85,35 @@ const transactions = [
       }
     });
    
-    
+     // Light/Dark Theme Toggle
+     const toggleButton = document.getElementById('theme-toggle');
+     let isDark = false;
+     
+     toggleButton.addEventListener('click', () => {
+       document.body.classList.toggle('dark');
+       isDark = !isDark;
+       toggleButton.textContent = isDark ? '☀️' : '🌓';
+     });
+     
+       
+         new Chart(ctxPie, {
+           type: 'pie',
+           data: {
+             labels: Object.keys(typeCounts),
+             datasets: [{
+               label: 'Share',
+               data: Object.values(typeCounts),
+               backgroundColor: ['#ffcd56', '#36a2eb', '#ff6384', '#4bc0c0'],
+             }]
+           },
+           options: {
+             responsive: true
+           }
+         });
+       }
+       
+       // Initialize table and charts
+       renderTable(transactions);
+       generateCharts();
+       
+ 
