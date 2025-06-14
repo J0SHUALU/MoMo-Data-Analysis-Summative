@@ -1,3 +1,5 @@
+// API for managing mobile money transactions and SMS imports
+// This code sets up an Express server with endpoints to manage mobile money transactions and import SMS messages.
 const express = require('express');
 const mysql = require('mysql2');
 const path = require('path');
