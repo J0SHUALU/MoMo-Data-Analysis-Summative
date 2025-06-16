@@ -1,10 +1,11 @@
 # Project Contributors
 
-## Lead Developer
-[Your Name]
-- Email: [Your Email]
-- GitHub: [Your GitHub Username]
-- Role: Full Stack Developer
+- Olive Umurerwa <o.umurerwa@alustudentcom>
+- Sash Golden Munyankindi <s.munyankin@alustudent.com>
+- Owen Ganza <o.ganza@alustudent.com>
+- Moses Joshua <j.moses@alustudent.com>
+
+
 - Contributions:
   - Initial project setup
   - Database design
@@ -16,8 +17,8 @@
 ## Project Information
 - Project: MoMo Data Analysis Dashboard
 - Version: 1.0.0
-- Start Date: June 2024
-- Repository: https://github.com/yourusername/momo-analysis
+- Start Date: June 2025
+- Repository: https://github.com/J0SHUALU/MoMo-Data-Analysis-Summative.git
 
 ## Development Stack
 - Frontend: HTML5, CSS3, JavaScript
@@ -29,7 +30,3 @@
   - Chart.js
   - SimpleXML
 
-## Contact
-For any questions or concerns about this project, please contact:
-[Your Name]
-[Your Email] 
