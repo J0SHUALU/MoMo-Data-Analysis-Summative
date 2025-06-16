@@ -2,6 +2,8 @@
 
 A Node.js application for analyzing MTN Mobile Money transactions from SMS backup files. This system helps track and analyze mobile money transactions by processing SMS backup files.
 
+# The link to our video: https://www.youtube.com/watch?v=7_Js3pBSUy4
+
 ## For Instructors
 
 ### System Overview
