@@ -1,40 +1,60 @@
 # MTN Mobile Money Transaction Analysis System
 
-A Node.js application for analyzing MTN Mobile Money transactions from SMS backup files. This system helps track and analyze mobile money transactions by processing SMS backup files.
+A comprehensive Node.js application for analyzing MTN Mobile Money transactions from SMS backup files. This system provides detailed insights into mobile money transactions through advanced data processing, visualization, and analysis.
 
-# The link to our video: https://www.youtube.com/watch?v=7_Js3pBSUy4
+## Project Overview
 
-## For Instructors
+This project demonstrates the implementation of a full-stack application for processing and analyzing MTN Mobile Money transactions from SMS backup files. The system includes:
 
-### System Overview
-This application demonstrates:
-- XML file processing
-- SMS message parsing
-- Database operations
-- RESTful API implementation
-- Frontend development with modern JavaScript
-- Error handling and logging
-- Data visualization
+- XML file processing and SMS message parsing
+- Well-structured database design and implementation
+- Interactive frontend dashboard with data visualizations
+- RESTful API for backend/frontend integration
+- Comprehensive error handling and logging
+- Detailed documentation
 
-### Key Learning Points
-1. **Backend Development**
-   - Node.js and Express.js setup
-   - Database design and implementation
-   - API endpoint creation
-   - File processing and parsing
-   - Error handling
+## Evaluation Criteria
 
-2. **Frontend Development**
-   - Modern JavaScript (ES6+)
-   - Chart.js for data visualization
-   - Responsive design
-   - AJAX and API integration
+### 1. Data Processing (20 points)
+- Accurate parsing of SMS data
+- Proper categorization of transactions
+- Efficient data cleaning and validation
+- Robust error handling for malformed data
 
-3. **Database Concepts**
-   - Transaction management
-   - Data normalization
-   - Error logging
-   - Data relationships
+### 2. Database Design (20 points)
+- Normalized database schema
+- Efficient query optimization
+- Proper data relationships
+- Data integrity constraints
+- Transaction management
+
+### 3. Frontend Design (25 points)
+- Modern and intuitive user interface
+- Interactive data visualizations
+- Responsive design principles
+- Clear data presentation
+- User-friendly navigation
+
+### 4. Code Quality (15 points)
+- Clean and modular code structure
+- Comprehensive error handling
+- Proper code documentation
+- Efficient algorithms
+- Consistent coding standards
+
+### 5. Documentation (10 points)
+- Clear project setup instructions
+- Detailed API documentation
+- System architecture explanation
+- Implementation challenges and solutions
+- Future improvement suggestions
+
+### 6. Bonus Features (10 points)
+- Advanced data visualizations
+- Additional API endpoints
+- Enhanced user interactions
+- Performance optimizations
+- Additional analysis features
 
 ## Installation Guide
 
@@ -79,40 +99,6 @@ npm install
 npm start
 ```
 
-## Using the Application
-
-### 1. Import SMS Backup
-1. Open browser and navigate to `http://localhost:3000`
-2. Click "Import XML" in the navigation menu
-3. Select your SMS backup XML file
-4. Click "Upload"
-5. Wait for processing to complete
-6. View import results
-
-### 2. View Transactions
-1. Click "Transactions" in the navigation menu
-2. Use filters to:
-   - Search by transaction ID
-   - Filter by date range
-   - Filter by transaction type
-   - Sort by any column
-3. Click on a transaction to view details
-
-### 3. View Analytics
-1. Click "Dashboard" in the navigation menu
-2. View:
-   - Transaction volume by type
-   - Daily transaction trends
-   - Transaction amounts distribution
-   - Success/failure rates
-
-### 4. Error Handling
-1. Check "Error Logs" for any processing issues
-2. Common errors and solutions:
-   - Invalid XML format: Ensure file is valid XML
-   - Database connection: Verify MySQL is running
-   - File permissions: Check uploads directory
-
 ## Project Structure
 
 ```
@@ -134,44 +120,31 @@ summative/
 └── app.js            # Main application file
 ```
 
-## Testing the Application
+## Features
 
-### 1. Sample Data
-- Use the provided sample XML file in the `data` directory
-- File contains various transaction types for testing
+### 1. Data Processing
+- XML file parsing and validation
+- SMS message extraction and categorization
+- Transaction data cleaning and normalization
+- Error logging and handling
 
-### 2. Test Cases
-1. **File Upload**
-   - Test with valid XML file
-   - Test with invalid file format
-   - Test with empty file
+### 2. Database Operations
+- Efficient data storage and retrieval
+- Transaction management
+- Data integrity maintenance
+- Query optimization
 
-2. **Transaction Processing**
-   - Verify all transaction types are recognized
-   - Check amount calculations
-   - Verify date parsing
+### 3. Frontend Dashboard
+- Interactive data visualizations
+- Real-time data updates
+- Filtering and sorting capabilities
+- Responsive design
 
-3. **Error Handling**
-   - Test with malformed XML
-   - Test with invalid transaction data
-   - Verify error logging
-
-## Common Issues and Solutions
-
-1. **Database Connection Issues**
-   - Verify MySQL is running in XAMPP
-   - Check database credentials
-   - Ensure database exists
-
-2. **File Upload Issues**
-   - Check uploads directory permissions
-   - Verify file size limits
-   - Check file format
-
-3. **Processing Errors**
-   - Check error_logs table
-   - Verify XML format
-   - Check server logs
+### 4. API Endpoints
+- File upload and processing
+- Transaction data retrieval
+- Analytics data access
+- Error logging
 
 ## API Documentation
 
@@ -190,54 +163,34 @@ Get filtered transactions
 GET /api/transactions?page=1&limit=10&type=SEND&startDate=2024-01-01&endDate=2024-12-31
 ```
 
-## Database Schema
+## Testing
 
-### transaction_types
-```sql
-CREATE TABLE `transaction_types` (
-  `id` int(11) NOT NULL,
-  `type_name` varchar(100) NOT NULL,
-  `description` text DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
-)
-```
+### 1. Unit Tests
+- Data processing functions
+- Database operations
+- API endpoints
+- Utility functions
 
-### transactions
-```sql
-CREATE TABLE `transactions` (
-  `id` int(11) NOT NULL,
-  `transaction_id` varchar(50) DEFAULT NULL,
-  `type_id` int(11) DEFAULT NULL,
-  `amount` decimal(10,2) DEFAULT NULL,
-  `sender` varchar(100) DEFAULT NULL,
-  `recipient` varchar(100) DEFAULT NULL,
-  `phone_number` varchar(20) DEFAULT NULL,
-  `transaction_date` datetime DEFAULT NULL,
-  `fee` decimal(10,2) DEFAULT NULL,
-  `balance` decimal(10,2) DEFAULT NULL,
-  `status` varchar(20) DEFAULT NULL,
-  `raw_message` text DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
-)
-```
+### 2. Integration Tests
+- End-to-end workflows
+- API integration
+- Database operations
+- Frontend-backend interaction
 
-### error_logs
-```sql
-CREATE TABLE `error_logs` (
-  `id` int(11) NOT NULL,
-  `message` text DEFAULT NULL,
-  `raw_data` text DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
-)
-```
+### 3. Performance Tests
+- Data processing speed
+- Query optimization
+- Frontend responsiveness
+- API response times
 
-## Support
+## Contributing
 
-For technical support or questions:
-1. Check the error logs
-2. Review the documentation
-3. Contact the development team
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
 
 ## License
 
-This project is licensed under the MIT License. 
+This project is licensed under the MIT License - see the LICENSE file for details. 
