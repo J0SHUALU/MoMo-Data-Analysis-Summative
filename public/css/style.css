@@ -1,0 +1,159 @@
+:root {
+    --mtn-yellow: #FFD700;
+    --mtn-yellow-dark: #E6C200;
+    --mtn-black: #000000;
+    --mtn-gray: #F5F5F5;
+    --mtn-text: #000000;
+}
+
+body {
+    background-color: var(--mtn-gray);
+}
+
+.navbar {
+    background-color: var(--mtn-yellow) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: var(--mtn-text) !important;
+    font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--mtn-text) !important;
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #333 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #333 !important;
+    font-weight: 600;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    background-color: var(--mtn-yellow);
+    color: var(--mtn-text);
+    font-weight: 600;
+    border-bottom: none;
+}
+
+.btn-primary {
+    background-color: var(--mtn-yellow);
+    border-color: var(--mtn-yellow);
+    color: var(--mtn-text);
+}
+
+.btn-primary:hover {
+    background-color: var(--mtn-yellow-dark);
+    border-color: var(--mtn-yellow-dark);
+    color: var(--mtn-text);
+}
+
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead th {
+    background-color: var(--mtn-yellow);
+    color: var(--mtn-text);
+    border-bottom: none;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(255, 215, 0, 0.1);
+}
+
+.badge.bg-success {
+    background-color: #28a745 !important;
+}
+
+.badge.bg-warning {
+    background-color: #ffc107 !important;
+    color: var(--mtn-text);
+}
+
+.badge.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+.form-control, .form-select {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--mtn-yellow);
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--mtn-yellow);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--mtn-yellow-dark);
+}
+
+/* Card title styling */
+.card-title {
+    color: var(--mtn-black);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Card text styling */
+.card-text {
+    color: var(--mtn-black);
+    font-weight: 700;
+}
+
+/* Input group styling */
+.input-group .form-control {
+    border-right: none;
+}
+
+.input-group .form-control:last-child {
+    border-right: 1px solid #ddd;
+}
+
+/* Chart container styling */
+canvas {
+    max-width: 100%;
+    height: auto !important;
+}
+
+/* Chart Styles */
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 300px;
+    width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .chart-container {
+        height: 200px;
+    }
+} 
