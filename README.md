@@ -72,7 +72,7 @@ This project demonstrates the implementation of a full-stack application for pro
 1. **Clone and Setup Project**
 ```bash
 # Clone the repository
-git clone <https://github.com/J0SHUALU/MoMo-Data-Analysis-Summative.git>
+git clone <https://github.com/J0SHUALU/MoMo-Data-Analysis-Summative.git >
 cd summative
 
 # Install dependencies
