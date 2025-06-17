@@ -13,49 +13,6 @@ This project demonstrates the implementation of a full-stack application for pro
 - Comprehensive error handling and logging
 - Detailed documentation
 
-## Evaluation Criteria
-
-### 1. Data Processing (20 points)
-- Accurate parsing of SMS data
-- Proper categorization of transactions
-- Efficient data cleaning and validation
-- Robust error handling for malformed data
-
-### 2. Database Design (20 points)
-- Normalized database schema
-- Efficient query optimization
-- Proper data relationships
-- Data integrity constraints
-- Transaction management
-
-### 3. Frontend Design (25 points)
-- Modern and intuitive user interface
-- Interactive data visualizations
-- Responsive design principles
-- Clear data presentation
-- User-friendly navigation
-
-### 4. Code Quality (15 points)
-- Clean and modular code structure
-- Comprehensive error handling
-- Proper code documentation
-- Efficient algorithms
-- Consistent coding standards
-
-### 5. Documentation (10 points)
-- Clear project setup instructions
-- Detailed API documentation
-- System architecture explanation
-- Implementation challenges and solutions
-- Future improvement suggestions
-
-### 6. Bonus Features (10 points)
-- Advanced data visualizations
-- Additional API endpoints
-- Enhanced user interactions
-- Performance optimizations
-- Additional analysis features
-
 ## Installation Guide
 
 ### Prerequisites
